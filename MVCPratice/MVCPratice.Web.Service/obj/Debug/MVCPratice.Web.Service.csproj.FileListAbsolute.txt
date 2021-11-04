@@ -1,0 +1,15 @@
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\MVCPratice.Web.Service.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\MVCPratice.Web.Service.pdb
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\MVCPratice.Common.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\MVCPratice.Common.pdb
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\obj\Debug\MVCPratice.Web.Service.csprojAssemblyReference.cache
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\obj\Debug\MVCPratice.Web.Service.csproj.CoreCompileInputs.cache
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\obj\Debug\MVCPratice.Web.Service.csproj.CopyComplete
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\obj\Debug\MVCPratice.Web.Service.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\obj\Debug\MVCPratice.Web.Service.pdb
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\Newtonsoft.Json.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\Newtonsoft.Json.xml
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\MVCPratice.Web.Service.dll.config
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\System.Net.Http.Formatting.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\System.Net.Http.Formatting.xml
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Web.Service\bin\Debug\zh-Hant\System.Net.Http.Formatting.resources.dll
