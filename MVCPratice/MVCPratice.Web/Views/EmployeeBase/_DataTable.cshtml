@@ -1,0 +1,25 @@
+﻿@model List<MVCPratice.Common._Models.EmployeeBase>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Sex</th>
+        <th>Address</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td>@item.Sex</td>
+            <td>@item.Address</td>
+            <td>
+                <input type="button" name="Edit" value="編輯" onclick="location.href='@Url.Action("UpdatePage", "EmployeeBase", new { ID = item.ID })'" />
+                <input type="button" name="Delete" value="刪除" onclick="DeleteButtonClick('@item.ID')" />
+            </td>
+        </tr>
+    }
+
+</table>

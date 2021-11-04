@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div id="Search">
+    <form id="SearchForm">
+        <label for="ID">員工編號:</label>
+        <input type="text" id="ID" name="ID">
+        <br />
+        <br />
+        <input type="button" name="Search" value="搜尋" onclick="SearchButtonClick()" />
+        <input type="button" name="Create" value="新增" onclick="CreateButtonClick()" />
+        <br />
+        <br />
+    </form>
+
+</div>
+
+<div id="DataTable"></div>
+
+@section Scripts {
+    <script type="text/javascript">
+
+        //頁面開始
+        $(function () {
+            //搜尋全部
+            $.ajax({
+                url: '@Url.Action("GetData", "EmployeeBase")',
+                type: "POST",
+                data: {},
+                dataType: "html",
+                success: function (partialViewTable) {
+                    console.log(partialViewTable);
+                    $("#DataTable").html(partialViewTable);
+                },
+                error: function (e) {
+                    alert("資料查詢不成功");
+                    console.log(e);
+                }
+            });
+        });
+
+        //搜尋按鈕
+        var SearchButtonClick = function () {
+            var ID = $("#IDSearch").val();
+
+            $.ajax({
+                url: '@Url.Action("GetData", "EmployeeBase")',
+                type: "POST",
+                data: $("#SearchForm").serialize(),
+                dataType: "html",
+                success: function (partialViewTable) {
+                    console.log(partialViewTable);
+                    $("#DataTable").html(partialViewTable);
+                },
+                error: function () {
+                    alert("資料查詢不成功");
+                }
+            });
+
+        };
+
+        //新增按鈕，去新增頁面
+        var CreateButtonClick = function() {
+            location.href = '@Url.Action("CreatePage", "EmployeeBase")';
+        };
+
+        //修改按鈕，去修改頁面
+        var UpdateButtonClick = function (ID) {
+            location.href = '@Url.Action("UpdatePage")?ID='+ID;
+        };
+
+        //刪除按鈕，刪除
+        var DeleteButtonClick = function (ID) {
+            var r = confirm("您確定要刪除 " + ID + " ?");
+            if (r == true) {
+                $.ajax({
+                    url: '@Url.Action("Delete", "EmployeeBase")',
+                    data: { ID: ID },
+                    type: "POST",
+                    success: function (result) {
+                        alert(result);
+                        location.href = '@Url.Action("Index", "EmployeeBase")';
+                    },
+                    error: function (message) {
+                        errorNotification(message);
+                    }
+                });
+            }
+        }
+
+    </script>
+}

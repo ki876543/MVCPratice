@@ -1,0 +1,5 @@
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Common\bin\Debug\MVCPratice.Common.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Common\bin\Debug\MVCPratice.Common.pdb
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Common\obj\Debug\MVCPratice.Common.csproj.CoreCompileInputs.cache
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Common\obj\Debug\MVCPratice.Common.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.Common\obj\Debug\MVCPratice.Common.pdb
