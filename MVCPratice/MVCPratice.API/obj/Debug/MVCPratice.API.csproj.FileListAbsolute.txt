@@ -1,3 +1,4 @@
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Text.Encoding.CodePages.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\MVCPratice.API.dll.config
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\MVCPratice.API.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\MVCPratice.API.pdb
@@ -38,7 +39,6 @@ D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Securi
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Security.Cryptography.Encoding.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Security.Cryptography.Primitives.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Text.Encoding.CodePages.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Threading.Tasks.Extensions.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.ValueTuple.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Xml.ReaderWriter.dll
@@ -67,6 +67,7 @@ D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\System.Web.WebPages.
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\System.Web.WebPages.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\System.Web.WebPages.Razor.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\WebGrease.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\Dapper.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\MVCPratice.API.Service.pdb
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\MVCPratice.Common.pdb
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\Newtonsoft.Json.xml
@@ -82,6 +83,7 @@ D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\System.Web.WebPages.
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\System.Web.WebPages.Razor.xml
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\Antlr3.Runtime.pdb
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\Dapper.xml
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\zh-Hant\System.Web.Helpers.resources.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\zh-Hant\System.Web.Http.resources.dll
@@ -97,5 +99,3 @@ D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\obj\Debug\MVCPratice.API
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\obj\Debug\MVCPratice.API.csproj.CopyComplete
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\obj\Debug\MVCPratice.API.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\obj\Debug\MVCPratice.API.pdb
-D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\Dapper.dll
-D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\Dapper.xml

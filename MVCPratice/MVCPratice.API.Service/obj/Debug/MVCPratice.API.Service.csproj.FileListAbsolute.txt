@@ -1,11 +1,11 @@
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\bin\Debug\MVCPratice.API.Service.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\bin\Debug\MVCPratice.API.Service.pdb
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\bin\Debug\Dapper.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\bin\Debug\MVCPratice.Common.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\bin\Debug\MVCPratice.Common.pdb
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\bin\Debug\Dapper.xml
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\obj\Debug\MVCPratice.API.Service.csprojAssemblyReference.cache
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\obj\Debug\MVCPratice.API.Service.csproj.CoreCompileInputs.cache
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\obj\Debug\MVCPratice.API.Service.csproj.CopyComplete
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\obj\Debug\MVCPratice.API.Service.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\obj\Debug\MVCPratice.API.Service.pdb
-D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\bin\Debug\Dapper.dll
-D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API.Service\bin\Debug\Dapper.xml

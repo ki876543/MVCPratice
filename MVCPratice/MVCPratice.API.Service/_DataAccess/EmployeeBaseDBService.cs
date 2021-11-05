@@ -5,8 +5,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MVCPratice.API.Service._DataAccess
 {
@@ -62,5 +60,41 @@ namespace MVCPratice.API.Service._DataAccess
             }
         }
         #endregion
+
+        #region 新增
+        public string Create(EmployeeBase CreateMember)
+        {
+            try
+            {
+                using (var conn = new SqlConnection(cnstr))
+                {
+                    conn.Open();
+                    string strSql = @"  INSERT INTO
+                                            EmployeeBase (
+                                                ID,
+                                                Name,
+                                                Sex,
+                                                Address
+                                            )
+                                        VALUES
+                                            (
+                                                @ID,
+                                                @Name,
+                                                @Sex,
+                                                @Address
+                                            )";
+
+                    var result = conn.Execute(strSql, CreateMember);
+
+                    return "新增成功";
+                }
+            }
+            catch (Exception e)
+            {
+                return e.Message.ToString();
+            }
+
+            #endregion
+        }
     }
 }
