@@ -2,7 +2,6 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,18 +23,35 @@ namespace MVCPratice.Web.Service._Service
         {
             string json = JsonConvert.SerializeObject(model);
             HttpContent stringContent = new StringContent(json, Encoding.UTF8, "application/json");
-            //EmployeeBase EmployeeBase= null;
-            HttpResponseMessage Response = await this._EmployeeBase.PostAsync("EmployeeBase/GetData", stringContent).ConfigureAwait(false);
 
-            if (Response.IsSuccessStatusCode)
+            HttpResponseMessage response = await this._EmployeeBase.PostAsync("EmployeeBase/GetData", stringContent).ConfigureAwait(false);
+
+            if (response.IsSuccessStatusCode)
             {
-                string responsestream = await Response.Content.ReadAsStringAsync();
-                var result = JsonConvert.DeserializeObject<List<EmployeeBase>>(responsestream);
+                var result = response.Content.ReadAsAsync<List<EmployeeBase>>().Result;
 
                 return result;
             }
 
             return new List<EmployeeBase>();
+        }
+        #endregion
+
+        #region 新增
+        public async Task<string> Create(EmployeeBase model)
+        {
+            string json = JsonConvert.SerializeObject(model);
+            HttpContent stringContent = new StringContent(json, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = await this._EmployeeBase.PostAsync("EmployeeBase/Create", stringContent).ConfigureAwait(false);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var result = response.Content.ReadAsAsync<string>().Result;
+
+                return result;
+            }
+            return "";
         }
         #endregion
     }
