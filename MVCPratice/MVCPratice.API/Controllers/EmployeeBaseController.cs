@@ -34,5 +34,15 @@ namespace MVCPratice.API.Controllers
         }
         #endregion
 
+        #region 刪除
+        [Route("Delete")]
+        [HttpPost]
+        public string Delete([FromBody] SearchModel searchModel)
+        {
+            var result = ES.Delete(searchModel.ID);
+
+            return result;
+        }
+        #endregion
     }
 }

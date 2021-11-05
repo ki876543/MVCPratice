@@ -54,5 +54,24 @@ namespace MVCPratice.Web.Service._Service
             return "";
         }
         #endregion
+
+        #region 刪除
+        public async Task<string> Delete(SearchModel model)
+        {
+            string json = JsonConvert.SerializeObject(model);
+            HttpContent stringContent = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await this._EmployeeBase.PostAsync("EmployeeBase/Delete", stringContent).ConfigureAwait(false);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var result = response.Content.ReadAsAsync<string>().Result;
+
+                return result;
+            }
+
+            return "";
+        }
+        #endregion
     }
 }

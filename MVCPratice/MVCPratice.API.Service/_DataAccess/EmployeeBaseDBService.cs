@@ -93,8 +93,36 @@ namespace MVCPratice.API.Service._DataAccess
             {
                 return e.Message.ToString();
             }
-
-            #endregion
         }
+        #endregion
+
+        #region 刪除
+        public string Delete(string ID)
+        {
+            try
+            {
+                using (var conn = new SqlConnection(cnstr))
+                {
+                    conn.Open();
+                    string strSql = @"  DELETE FROM
+                                            EmployeeBase
+                                        WHERE
+                                            ID = @ID";
+
+                    DynamicParameters parameters = new DynamicParameters();
+                    parameters.Add("@ID", ID);
+
+                    var result = conn.Execute(strSql, parameters);
+
+                    return "刪除成功";
+                }
+            }
+            catch (Exception e)
+            {
+                return e.Message.ToString();
+                throw;
+            }
+        }
+        #endregion
     }
 }

@@ -1,4 +1,4 @@
-D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\MVCPratice.API.dll.config
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\MVCPratice.API.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\MVCPratice.API.pdb
@@ -11,7 +11,6 @@ D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\csi.rsp
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\Microsoft.CSharp.Core.targets
@@ -39,6 +38,7 @@ D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Securi
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Security.Cryptography.Encoding.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Security.Cryptography.Primitives.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Text.Encoding.CodePages.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Threading.Tasks.Extensions.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.ValueTuple.dll
 D:\Project\Partice\MVCPratice\MVCPratice\MVCPratice.API\bin\roslyn\System.Xml.ReaderWriter.dll
