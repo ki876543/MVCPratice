@@ -95,5 +95,29 @@ namespace MVCPratice.Web.Controllers
 
         }
         #endregion
+
+
+        #region 刪除
+        [HttpPost]
+        public ActionResult Delete(string ID)
+        {
+            string result = "";
+            var search = new SearchModel();
+            search.ID = ID;
+
+            var taskResult = this._EmployeeBaseWebService.Delete(search);
+
+            if (!taskResult.IsFaulted)
+            {
+                result = taskResult.Result;
+            }
+            else
+            {
+                result = null;
+            }
+
+            return this.Json(result, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
     }
 }
