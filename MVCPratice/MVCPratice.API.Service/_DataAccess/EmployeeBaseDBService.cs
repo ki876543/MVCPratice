@@ -51,7 +51,7 @@ namespace MVCPratice.API.Service._DataAccess
                                 FROM
                                     EmployeeBase
                                 WHERE
-                                    ID LIKE '%' + @ID % '%'";
+                                    ID LIKE '%' + @ID + '%'";
 
                     parameters.Add("@ID", searchModel.ID);
                 }
