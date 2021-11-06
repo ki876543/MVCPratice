@@ -73,5 +73,24 @@ namespace MVCPratice.Web.Service._Service
             return "";
         }
         #endregion
+
+        #region 修改
+        public async Task<string> Update(EmployeeBase model)
+        {
+            string json = JsonConvert.SerializeObject(model);
+            HttpContent stringContent = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await this._EmployeeBase.PostAsync("EmployeeBase/Update", stringContent).ConfigureAwait(false);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var result = response.Content.ReadAsAsync<string>().Result;
+
+                return result;
+            }
+
+            return "";
+        }
+        #endregion
     }
 }

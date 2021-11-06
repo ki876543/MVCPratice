@@ -44,5 +44,15 @@ namespace MVCPratice.API.Controllers
             return result;
         }
         #endregion
+
+        #region 更新
+        [Route("Update")]
+        public string Update([FromBody] EmployeeBase EmployeeBase)
+        {
+            var result = ES.Update(EmployeeBase);
+
+            return result;
+        }
+        #endregion
     }
 }
