@@ -120,7 +120,35 @@ namespace MVCPratice.API.Service._DataAccess
             catch (Exception e)
             {
                 return e.Message.ToString();
-                throw;
+            }
+        }
+        #endregion
+
+        #region 修改
+        public string Update(EmployeeBase UpdateEmployeeBase)
+        {
+            try
+            {
+                using (var conn = new SqlConnection(cnstr))
+                {
+                    conn.Open();
+                    string strSql = @"  UPDATE
+                                            EmployeeBase
+                                        SET
+                                            Name = @Name,
+                                            Sex = @Sex,
+                                            Address = @Address
+                                        WHERE
+                                            ID = @ID";
+
+                    var result = conn.Execute(strSql, UpdateEmployeeBase);
+
+                    return "修改成功";
+                }
+            }
+            catch (Exception e)
+            {
+                return e.Message.ToString();
             }
         }
         #endregion

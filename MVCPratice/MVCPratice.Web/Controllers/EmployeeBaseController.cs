@@ -1,6 +1,7 @@
 ﻿using MVCPratice.Common._Models;
 using MVCPratice.Web.Service._Service;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace MVCPratice.Web.Controllers
@@ -46,12 +47,12 @@ namespace MVCPratice.Web.Controllers
             return View();
         }
 
-        public ActionResult Create(EmployeeBase CreateMember)
+        public ActionResult Create(EmployeeBase CreateEmployeeBase)
         {
             string result = "";
             if (ModelState.IsValid)
             {
-                var taskResult = this._EmployeeBaseWebService.Create(CreateMember);
+                var taskResult = this._EmployeeBaseWebService.Create(CreateEmployeeBase);
 
                 if (!taskResult.IsFaulted)
                 {
@@ -118,6 +119,46 @@ namespace MVCPratice.Web.Controllers
 
             return this.Json(result, JsonRequestBehavior.AllowGet);
         }
+        #endregion
+
+        #region 修改
+        public ActionResult UpdatePage(string ID)
+        {
+            var result = new EmployeeBase();
+            var search = new SearchModel();
+            search.Type = "equal";
+            search.ID = ID;
+            var taskResult = this._EmployeeBaseWebService.GetData(search);
+            if (!taskResult.IsFaulted)
+            {
+                result = taskResult.Result.FirstOrDefault();
+            }
+            else
+            {
+                result = null;
+            }
+            return View(result);
+        }
+
+        [HttpPost]
+        public ActionResult Update(EmployeeBase UpdateEmployeeBase)
+        {
+            string result = "";
+
+            var taskResult = this._EmployeeBaseWebService.Update(UpdateEmployeeBase);
+
+            if (!taskResult.IsFaulted)
+            {
+                result = taskResult.Result;
+            }
+            else
+            {
+                result = null;
+            }
+
+            return this.Json(result, JsonRequestBehavior.AllowGet);
+        }
+
         #endregion
     }
 }

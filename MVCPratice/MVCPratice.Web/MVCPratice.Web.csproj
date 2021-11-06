@@ -200,6 +200,7 @@
     <Content Include="Views\EmployeeBase\Index.cshtml" />
     <Content Include="Views\EmployeeBase\_DataTable.cshtml" />
     <Content Include="Views\EmployeeBase\CreatePage.cshtml" />
+    <Content Include="Views\EmployeeBase\UpdatePage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
